@@ -16,7 +16,7 @@
 
  **Flowchart**
 
-![Reverse_Straing](Algorithm_Tasks/algorithm tasks-reverse a string.png)
+![Reverse_Straing](algorithm tasks-reverse a string.png)
 
  #### 2.search in list of student marks for the highest one
  ###### note: i is pointer
@@ -31,7 +31,7 @@
 
 **Flowchart**
 
-![Search Highest Number](Algorithm_Tasks/algorithm-tasks-search-highest-number.png)
+![Search Highest Number](algorithm-tasks-search-highest-number.png)
 
 
 #### 3. Sort the students marks from highest to lowest    
@@ -48,7 +48,7 @@
 9. return marks
 
 **Flowchart**
-![Sort_Student_marks](Algorithm_Tasks/algorithm tasks-sort from higthest to lowest.png)
+![Sort_Student_marks](algorithm tasks-sort from higthest to lowest.png)
 
 #### 4.check if number is palindrome ( ex: 3443 is palindrome , 56 is not palindrome , 454 is palindrome )
 **Pesudo""
@@ -65,4 +65,4 @@
 
 **Flowchart**
 
-![Numer_Palindrome](Algorithm_Tasks/algorithm tasks-number is palindrome.png)
+![Numer_Palindrome](algorithm tasks-number is palindrome.png)
