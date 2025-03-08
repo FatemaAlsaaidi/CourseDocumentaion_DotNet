@@ -16,7 +16,7 @@
 
  **Flowchart**
 
-![Reverse_Straing](C:\Users\HP\Desktop\Full-Stack .net cohort\Course Documentaion\Algorithm\algorithm tasks-reverse a string.png)
+![Reverse-String](<algorithm tasks-reverse a string.png>)
 
  #### 2.search in list of student marks for the highest one
  ###### note: i is pointer
@@ -30,8 +30,7 @@
 7. return L
 
 **Flowchart**
-
-![Search Highest Number](C:\Users\HP\Desktop\Full-Stack .net cohort\Course Documentaion\Algorithm\algorithm-tasks-search-highest-number.png)
+![Search-highest-number](<algorithm tasks-search highest number.png>)
 
 
 #### 3. Sort the students marks from highest to lowest    
@@ -48,7 +47,7 @@
 9. return marks
 
 **Flowchart**
-![Sort_Student_marks](C:\Users\HP\Desktop\Full-Stack .net cohort\Course Documentaion\Algorithm\algorithm tasks-sort from higthest to lowest.png)
+![Sort-numbers](<algorithm tasks-sort from higthest to lowest.png>)
 
 #### 4.check if number is palindrome ( ex: 3443 is palindrome , 56 is not palindrome , 454 is palindrome )
 **Pesudo""
@@ -64,5 +63,4 @@
 9. else return  not palindrome
 
 **Flowchart**
-
-![Numer_Palindrome](C:\Users\HP\Desktop\Full-Stack .net cohort\Course Documentaion\Algorithm\algorithm tasks-number is palindrome.png)
+![Number-Palindrome](<algorithm tasks-number is palindrome.png>)
