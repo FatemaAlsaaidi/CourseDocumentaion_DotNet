@@ -7,61 +7,62 @@
 
 **pesudo**
 
-input: string = input("input your world")
-z = new list
-FOR i FROM LENGTH(string) - 1 TO 0
-add string[i] to z list 
-end for
-return z
+1. input: string = input("input your world")
+2. z = new list
+3. FOR i FROM LENGTH(string) - 1 TO 0
+4. add string[i] to z list 
+5. end for
+6. return z
 
  **Flowchart**
 
-![Reverse_Straing](algorithm tasks-reverse a string.png)
+![Reverse_Straing](Algorithm_Tasks/algorithm tasks-reverse a string.png)
 
  #### 2.search in list of student marks for the highest one
  ###### note: i is pointer
 **pesudo**
-input: marks 
-L=0
-for i in marks
-if i>L
-set new L = i
-end for
-return L
+1. input: marks 
+2. L=0
+3. for i in marks
+4. if i>L
+5. set new L = i
+6. end for
+7. return L
 
 **Flowchart**
 
-![Search_highest_number](algorithm tasks-search highest number.png)
+![Search Highest Number](Algorithm_Tasks/algorithm-tasks-search-highest-number.png)
+
 
 #### 3. Sort the students marks from highest to lowest    
 ###### note: first loop forn selest the number of loop, second loop foe com
 **Pesudo""
-input : list of marks
-len_marks is length of marks list
-for i from 0 to len_marks -1
-fOR j FROM 0 TO len_marks-i-2
-if IF marks[j] < marks[j+1] THEN
-SWAP marks[j] WITH marks[j+1]
-end for 
-end for 
-return marks
+1. input : list of marks
+2. len_marks is length of marks list
+3. for i from 0 to len_marks -1
+4. fOR j FROM 0 TO len_marks-i-2
+5. if IF marks[j] < marks[j+1] THEN
+6. SWAP marks[j] WITH marks[j+1]
+7. end for 
+8. end for 
+9. return marks
 
 **Flowchart**
-![Sort_Student_marks](algorithm tasks-sort from higthest to lowest.png)
+![Sort_Student_marks](Algorithm_Tasks/algorithm tasks-sort from higthest to lowest.png)
 
 #### 4.check if number is palindrome ( ex: 3443 is palindrome , 56 is not palindrome , 454 is palindrome )
 **Pesudo""
 
-input number
-originalNum = number
-reversedNum = new list
-FOR i FROM LENGTH(number) - 1 TO 0
-add number[i] to reversedNum list 
-end for
-if originalNum ==reversedNum
-return palindrome
-else return  not palindrome
+1. input number
+2. originalNum = number
+3. reversedNum = new list
+4. FOR i FROM LENGTH(number) - 1 TO 0
+5. add number[i] to reversedNum list 
+6. end for
+7. if originalNum ==reversedNum
+8. return palindrome
+9. else return  not palindrome
 
 **Flowchart**
 
-![Numer_Palindrome](algorithm tasks-number is palindrome.png)
+![Numer_Palindrome](Algorithm_Tasks/algorithm tasks-number is palindrome.png)
