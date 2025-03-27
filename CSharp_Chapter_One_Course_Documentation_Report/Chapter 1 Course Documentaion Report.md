@@ -178,6 +178,19 @@ In this way the programming language can write code to translate constant facts 
 - Data Type :
 in the programming language world, there are different data type deal with such as integer, float, string boolean, array, list elt. 
 
-- variable : is the defined space name in the memory to stor the data, witch the value of the variable can change.
-- constant : is constant value which can not change through the program coding. 
--Input / output statemets 
+- variable : A variable is a container that holds a value, each variable has a data type that defines what kind of data it can store. 
+- constant : is constant has value which can not change tafter assignment. 
+-Input / output statemets: any program has inputs from user and process those to be get the results which will show it, thus, this results called output. 
+![DataType, variable, constant and InputOutput](<data type- variable-constant-InputOutput.JPG>)
+##  Arithmetic and logic operators 
+![Operators and logics](<operator and logic.JPG>)
+
+##  Conditional statements ( if else / switch case ) 
+
+##  Looping ( for, while and do while ) 
+
+## Nested operations ( nested conditions and nested looping )
+
+##  Array data structure 
+
+S
