@@ -130,6 +130,41 @@ It is used to shows any changes between the staging area and the repository.
 It is used to view the commit history in your Git repository.
 
 ## Algorithm design ( Pseudo code and flowchart ) 
+#### What is Algorithm:
+- An algorithm is a step-by-step procedure to solve a problem or perform a task. It consists of finite, well-defined, 
+and ordered instructions that take input, process it, and produce an output.
+*Pseudo code*
+- Pseudo Code
+Pseudo code is a simplified, human-readable description of a program's logic using structured statements. It does not follow any specific programming syntax but resembles real code to make algorithms easy to understand. It helps programmers plan before actual coding.
+
+- Key Features:
+
+Uses plain language mixed with programming concepts.
+
+Focuses on logic rather than syntax.
+
+Easily translatable into actual code.
+
+- Example:
+Start
+  Input A, B
+  Sum = A + B
+  Print Sum
+End
+
+*flowchart*
+A flowchart is a visual representation of an algorithm using symbols to illustrate steps in a process. It helps in understanding, debugging, and documenting algorithms before implementation.
+
+- Key Features:
+
+Uses standard symbols like ovals (Start/End), rectangles (Process), and diamonds (Decision).
+
+Provides a clear and structured workflow.
+
+Useful for debugging and explaining logic visually.
+
+- Example:
+[Start] → [Input A, B] → [Sum = A + B] → [Print Sum] → [End]
 
 ## Web Development Stacks
 
@@ -181,16 +216,271 @@ in the programming language world, there are different data type deal with such 
 - variable : A variable is a container that holds a value, each variable has a data type that defines what kind of data it can store. 
 - constant : is constant has value which can not change tafter assignment. 
 -Input / output statemets: any program has inputs from user and process those to be get the results which will show it, thus, this results called output. 
-![DataType, variable, constant and InputOutput](<data type- variable-constant-InputOutput.JPG>)
+
+```javascript
+int r;
+const double pi = 3.14;
+string Hello = "Hllo";
+DateTime Date;
+bool IsSave = false;
+```
 ##  Arithmetic and logic operators 
-![Operators and logics](<operator and logic.JPG>)
 
+*Arithmetic*
+```javascript
+Console.WriteLine("Enther the value of radius to start calculate the area of circle: ");
+r = int.Parse(Console.ReadLine());
+double AreaCircle = pi * r * r;
+Console.WriteLine($"The Area of Circle is{AreaCircle}");
+
+
+int x, y;
+char z;
+Console.WriteLine("Enter first number");
+x = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter Seconde number");
+y = int.Parse(Console.ReadLine());
+Console.WriteLine("Results: ");
+Console.WriteLine("1. Addition");
+int a1 = x + y;
+Console.WriteLine(a1);
+Console.WriteLine("2. Subtraction");
+int a2 = x - y;
+Console.WriteLine(a2);
+Console.WriteLine("3. Multiplication");
+int a3 = x * y;
+Console.WriteLine(a3);
+Console.WriteLine("3. Division");
+int a4 = x / y;
+Console.WriteLine(a4);
+
+```
+
+*Logic*
+```javascript
+int Mark;
+Console.WriteLine("Enter Your Mark:\n");
+Mark = int.Parse(Console.ReadLine());
+
+if (Mark >= 90 && Mark <= 100)
+{
+    Console.WriteLine("A");
+}
+else if (Mark >= 80 && Mark <= 89)
+{
+    Console.WriteLine("B");
+}
+else if (Mark >= 70 && Mark <= 79)
+{
+    Console.WriteLine("C");
+}
+else if (Mark >= 60 && Mark <= 69)
+{
+    Console.WriteLine("D");
+}
+else
+{
+    Console.WriteLine("F");
+}
+```
 ##  Conditional statements ( if else / switch case ) 
+*If else*
+```javascript
+int Mark2 = 0;
+Console.WriteLine("Enter Your Mark:\n");
+Mark = int.Parse(Console.ReadLine());
 
+if (Mark2 >= 65)
+{
+    Console.WriteLine("pass");
+}
+else
+{
+    Console.WriteLine("faild");
+}
+
+```
+
+*switch case*
+
+```javascript
+int num1, num2;
+double res;
+int choice;
+bool IsActive = false;
+Console.WriteLine("Enter first number");
+num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter Seconde number");
+num2 = int.Parse(Console.ReadLine());
+Console.WriteLine("select the Operation: ");
+Console.WriteLine("1. Addition");
+Console.WriteLine("2. Subtraction");
+Console.WriteLine("3. Multiplication");
+Console.WriteLine("4. Division");
+choice = int.Parse(Console.ReadLine());
+switch (choice)
+{
+    case 1:
+        res = num1 + num2;
+        break;
+
+    case 2:
+        res = num1 - num2;
+        break;
+
+    case 3:
+        res = num1 * num2;
+        break;
+
+    case 4:
+
+        if (num2 == 0)
+        {
+            Console.WriteLine("Division by zero not allowed");
+            IsActive = true;
+
+        }
+        else
+        {
+            res = num1 / num2;
+        }
+
+        break;
+
+    default:
+        Console.WriteLine("Wrong Choice");
+        IsActive = true;
+        break;
+
+}
+```
 ##  Looping ( for, while and do while ) 
+*for*
+```javascript
+ int n = 5;
+ for(int i=0; i<5; i++)
+ {
+     Console.WriteLine(i);
+ }
+```
 
+*while*
+```javascript
+ int n2 = 0;
+ while (n2 < 5)
+ {
+     Console.Write(n2);
+     n2++;
+ }
+
+```
+
+*do while*
+```javascript
+int n3 = 0;
+
+do
+{
+    Console.WriteLine("i = ", n2);
+    n3++;
+
+} while (n3 < 5);
+
+```
 ## Nested operations ( nested conditions and nested looping )
+*nested conditions*
+```javascript
+int marks = 85;
 
-##  Array data structure 
+if (marks >= 90)
+{
+    Console.WriteLine("Grade: A+");
+}
+else if (marks >= 80)
+{
+    Console.WriteLine("Grade: A");
 
-S
+    if (marks >= 85)
+    {
+        Console.WriteLine("Excellent Performance!");
+    }
+    else
+    {
+        Console.WriteLine("Good Job!");
+    }
+}
+else if (marks >= 70)
+{
+    Console.WriteLine("Grade: B");
+}
+else if (marks >= 60)
+{
+    Console.WriteLine("Grade: C");
+}
+else
+{
+    Console.WriteLine("Grade: F - Needs Improvement");
+}
+```
+*nested looping*
+```javascript
+for (int i = 1; i <= 10; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        console.Write(j.ToString() + " ");
+    }
+ 
+    Console.WriteLine();
+}
+Console.ReadKey();
+```
+##  Array data structure
+```javascript
+int [] names;
+
+
+```
+
+##  Functions in CSharp ( built-in ) 
+```javascript
+Console.Write("Enter first number: ");
+int a = int.Parse(Console.ReadLine());
+
+Console.Write("Enter second number: ");
+int b = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Sum: {Sum(a, b)}");
+
+satic void sum(a,b){
+ int z = a+b
+ Console.WriteLine(z);
+}
+```
+## Errors in programming
+```javascript
+try
+{
+    Console.Write("Enter first number: ");
+    int a = int.Parse(Console.ReadLine());
+
+    Console.Write("Enter second number: ");
+    int b = int.Parse(Console.ReadLine());
+
+    Console.WriteLine($"Sum: {Sum(a, b)}");
+}
+catch (FormatException)
+{
+    Console.WriteLine("Invalid input! Please enter a valid integer.");
+}
+catch (Exception e)
+{
+    Console.WriteLine($"An error occurred: {e.Message}");
+}
+
+
+satic void sum(a,b){
+ int z = a+b
+ Console.WriteLine(z);
+}
+```
