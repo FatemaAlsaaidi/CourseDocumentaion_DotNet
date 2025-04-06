@@ -170,25 +170,19 @@ Useful for debugging and explaining logic visually.
 
 ## Programming Paradigms 
 ![Programming Paradigms](<Programming Paradigms.png>)
-It is the way to sole any problem using Pragramming language
+- *Paradigm* is a method to solve some problem or do some task.
+- *Programming paradigm* is an approach to solve a problem using some programming language or also we can say it is a method to solve a problem using tools and techniques that are available to us following some approach.
 
-##### Types of programming paradigm
+*Programming paradigm Types:*
+1.  Imperative programming paradigm: It performs step by step task by changing state. The main focus is on how to achieve the goal. The paradigm 
+consist of several statements and after execution of all the result is stored. 
+2.  Declarative programming paradigm : It’s a style of building programs that expresses logic of computation without talking about its control flow, 
+focuses on what the outcome should be rather than how to achieve it. 
 
-##### 1. Imperative programming paradigm:
-In this way the progamming language can write the sequance or orders forms. Thus, The main focus is on how to achieve the goal.
-
-##### 2.Declarative programming paradigm: 
-In this way the programming language can write code to translate constant facts role.
-
-##### Types of Imperative programming paradigm
-    1. Procedural programming : constant steps
-    2. Object oriented programming :based on ojects and their attribute and methods 
-    3. Parallel processing : is the way to excute the procedues at same time
-
-##### Types of Declarative programming paradigm
-    1. Logic programming : excuted with program based on conclusions based on facts and laws
-    2. Functional programming: excuted with program that based on the results of rapid operations and display the results quickly.
-    3. Database/Data driven programming : excuted with program based on get specific in data from database.
+*Imperative programming paradigm Types:*
+1. Procedural programming
+2. Object oriented programming
+3. Parallel processing
 
 ## Algorithm programming components
 ![What is an Algorithm](<what is an algorithm.png>)
@@ -204,10 +198,10 @@ In this way the programming language can write code to translate constant facts 
 ![Flowchart](Flowchart.jpg)
 ![Flowchart example in General](Flowchart2.jpg)
 
-## Types of programming languages ( based on machine interaction, execution )
+# Types of programming languages ( based on machine interaction, execution )
 
 
-## Comparison of compiler and interpreter
+# Comparison of compiler and interpreter
 
 ## Data types, Variables, Constants and input/ output statements 
 - Data Type :
@@ -435,29 +429,91 @@ for (int i = 1; i <= 10; i++)
 }
 Console.ReadKey();
 ```
-##  Array data structure
-```javascript
-int [] names;
+#  Array data structure
+- An array in C# is a data structure that stores a fixed-size sequential collection of elements of the 
+same type. Arrays are used to store multiple values in a single variable, instead of declaring 
+separate variables for each value. 
+- Key Features of Arrays: 
+1. Fixed Size: The size of an array is defined when it is created and cannot be changed. 
+2. Same Type: All elements in an array must be of the same type (e.g., all integers, all strings, 
+etc.). 
+3. Indexing: Arrays are zero-indexed, meaning the first element is at index 0, the second at 
+index 1, and so on. 
+4. Efficient Access: Arrays provide fast access to elements using their index.
 
+```javascript
+// Initializing with Values
+int [] names= New int[] {1,2,3,4,5};
 
 ```
 
-##  Functions in CSharp ( built-in ) 
+# Functions in CSharp ( built-in ) 
+- In C#, *functions* (also known as *methods*) are *blocks of code* that perform a specific task. They are a 
+fundamental concept in programming, allowing you to *encapsulate code into reusable units*.
+
+- There are two types of Functions:  
+1. Built-in Functions : These functions are *available by .Net Framework* to perform common tasks, ranging from 
+mathematical operations to string manipulation, array handling, and more.
+
+2. User defined Functions : Are function *defined by user* to accomplish specific tasks that are not done by system and tune them 
+to specific needs 
+
+### Fuctions
+1. Math Functions
+2. String Functions 
+3. Date and Time Functions
+4. Array Functions
+5. Console Functions 
+6. Type Conversion Functions
+7. Random Number Functions 
+
 ```javascript
-Console.Write("Enter first number: ");
-int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter First Number");
+Console.WriteLine("Enter Second Number");
 
-Console.Write("Enter second number: ");
-int b = int.Parse(Console.ReadLine());
+int num1 = int.parse(Console.ReadLine());
+int num2 = int.parse(Console.ReadLine());
 
-Console.WriteLine($"Sum: {Sum(a, b)}");
+int MaxNum = Math.Max(num1, num2);
+Console.WriteLine("The Max value is: " + MaxNum);
 
-satic void sum(a,b){
- int z = a+b
- Console.WriteLine(z);
-}
+int MinNum = Math.Min(num1, num2);
+Console.WriteLine("The Min value is: " + MinNum);
+
+double PowerNum = Math.Pow(MaxNum, MinNum);
+Console.WriteLine("The power result is: " + MinNum);
+
 ```
-## Errors in programming
+# Errors in programming
+### Error programming Types:
+1. Syntax error: occur when the code violates *the grammatical rules of the programming language*. These errors are usually *detected by the compiler* before the program runs. 
+2. Runtime error:  occur while *the program is running*, usually because of operations that are not 
+logically valid at runtime,
+3. Logical error: do not occur when the program compiles and runs, but *the output is not what you expected*.
+
+*Note: *
+- Logical errors are the most difficult to detect because the program doesn't crash or show any 
+immediate signs of error. 
+
+### RunTime Error types:
+1. Exception
+2. Out Range error
+3. Null Reference error
+
+### Errors Handling:
+1. Syntax error: follow the programming language rules
+2. Runtime error : add features on the code those feature deal with this type of error.
+3. Logical error 
+
+*Terms*
+
+- compiling: convers the programming language (which in english) to machine language, thus, the compiler detect the syntax error before converted to machine language. The actually converted done after click the "run ".
+
+- Exception: detect the last level of the error.
+- Inner Exception:detect the first level of the error.
+- Stack Stroage (known space): have initial value, do not produce null reference exception. ex: int, float, doublr, char and bool.
+- Heap Stroage (variable space): starts will null until you assign value, can produce null exception. ex: string, array, list and also others data structure.
+
 ```javascript
 try
 {
@@ -482,5 +538,34 @@ catch (Exception e)
 satic void sum(a,b){
  int z = a+b
  Console.WriteLine(z);
+}
+```
+### in conver error
+```javascript
+string Num = "123abc";
+if(int.TryParse(Num, out int result))
+{
+    Console.WriteLine($"Conversion successfull: {result}");
+}
+else
+{
+    Console.WriteLine("Conversion Failed");
+}
+```
+
+```javascript
+int DevidedBy = 0;
+Console.WriteLine("Enter divided Number:");
+int devided = int.Parse(Console.ReadLine());
+Console.WriteLine("Enter divided By Number:");
+int DevidedBy = int.Parse(Console.ReadLine());
+if(DevidedBy == 0)
+{
+    Console.WriteLine("Can not divided by zero");
+}
+else
+{
+    int result = devided / DevidedBy;
+    Console.WriteLine($"The divided result is: {result}");
 }
 ```
